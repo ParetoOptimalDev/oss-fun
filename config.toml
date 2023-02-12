@@ -11,7 +11,7 @@ paginate     = 10
   dateformNumTime = "2006-01-02 15:04"
 
   # Subtitle for home
-  homeSubtitle = "Never hear \"works on my machine\" again in your OSS projects"
+  homeSubtitle = "Coming Soon: Never hear \"works on my machine\" again in your OSS projects"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
@@ -46,7 +46,7 @@ paginate     = 10
     # alt = "Your example logo alt text"
 
   # And you can even create generic menu
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+  # [[menu.main]]
+  #   identifier = "blog"
+  #   name       = "Blog"
+  #   url        = "/posts"
