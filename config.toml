@@ -1,52 +1,132 @@
-baseurl      = "/"
-title        = "oss.fun: Making OSS fun with reproducible development environments!"
+# Hey, thanks for using my theme. If you like this theme,checkout my repo (https://gitlab.com/avron/gruvhugo"
+# and drop a star while you're at it. ;)
+baseurl = "/"
+title = "oss.fun"
 languageCode = "en-us"
-theme        = "hello-friend-ng"
-paginate     = 10
+paginate = "10" # Number of posts per page
+#disqusShortname = "" # Enable comments by entering your Disqus shortname
+#googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+#-------------------------------------------------------------------------------
+# DEFAULT SETTINGS
+#-------------------------------------------------------------------------------
 
-[params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+# Default Theme
+theme= "gruvhugo"
 
-  # Subtitle for home
-  homeSubtitle = "Coming Soon: Never hear \"works on my machine\" again in your OSS projects"
+# Default Post Extension
+defaultExtension= "html"
 
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  disableReadOtherPosts = false
-
-  # Enable sharing buttons, if you like
-  enableSharingButtons = true
-
-  # Metadata mostly used in document's head
-  description = "Making oss fun"
-  keywords = "open source software development, reproducible software"
-  images = [""]
+# Default metadata format for newly created frontmatter using
+# hugo new command. "toml", "yaml", or "json"
+metaDataFormat= "yaml"
 
 [taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
 
-[languages]
-  [languages.en]
-    title = "Making OSS development fun"
-    subtitle = "Focus on coding and problem solving and forget about build issues and other boring plumbing."
-    keywords = "open source software development, reproducible software"
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
+[params.main]
+  enabled = true
+  enableKatex = true
+  metaKeywords = "fast, hugo, theme, minimal, gruvbox"
+  headerTitle = "oss.fun: Have fun contributing to Open Source"
+  copyright = "© 2021 oss.fun"
+  name = "oss.fun"
+  img = "man.png"
+  img_title = ""
+  icon = "man.png"
+  quote = "Contribute to your choice of 100s of open source software projects in the next 5 minutes!"
+  description= "Getting started contributing to open source software has enough difficulty without worrying about setting up your development environment. This site exists to point developers to a list of open source projects that use a highly reproducible method for building that comes with development environments for free. This allows you to just focus on solving problems and coding, not drudging about with yet another instance of \"works on my machine\"!"
+  licenseUrl = ""
 
-    [languages.en.params.logo]
-      logoText = "oss.fun"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
+ # Social icons
+  [[params.social]]
+    name = "author"
+    url  = "https://github.com/paretoOptimalDev"
 
-  # And you can even create generic menu
+  [[params.social]]
+    name = "email"
+    url  = "mailto:pareto.optimal@mailfence.com"
+
+[params.style]
+  # add path to custom CSS files here
+  custom_css = []
+  # add path to custom SCSS files here
+  custom_scss = []
+
+[menu]
   [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+    identifier = "developers-get-started"
+    name       = "Developers: Get Started"
+    url        = "developers-get-started"
+
+  [[menu.main]]
+    identifier = "maintainers-get-featured"
+    name       = "Maintainers: Get Featured"
+    url        = "maintainers-get-featured"
+
+  [[menu.main]]
+    identifier = "reproducible-project-list"
+    name       = "Reproducible Project List"
+    url        = "reproducible-project-list"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.asciidocExt]
+    backend = "html5"
+    docType = "article"
+    extensions = []
+    failureLevel = "fatal"
+    noHeaderOrFooter = true
+    safeMode = "unsafe"
+    sectionNumbers = false
+    trace = false
+    verbose = true
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+  [markup.blackFriday]
+    angledQuotes = false
+    footnoteAnchorPrefix = ""
+    footnoteReturnLinkContents = ""
+    fractions = true
+    hrefTargetBlank = false
+    latexDashes = true
+    nofollowLinks = false
+    noreferrerLinks = false
+    plainIDAnchors = true
+    skipHTML = false
+    smartDashes = true
+    smartypants = true
+    smartypantsQuotesNBSP = false
+    taskLists = true
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
