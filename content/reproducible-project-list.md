@@ -52,5 +52,6 @@ github: https://github.com/NorfairKing/smos
 The above projects must:
 
 - Contain `flake.nix` and `.envrc`
+- I've built it and recorded it's "time to hacking" and "estimated disk usage"
 - ~~Have a 90% or higher build rate over the past month~~ (coming soon)
 Note this list is a subset from [this search courtesy of sourcegraph](https://sourcegraph.com/search?q=context:global+repo:has.path%28flake.nix%29+and+repo:has.path%28.envrc%29+select:repo+&patternType=lucky&sm=0&groupBy=repo).

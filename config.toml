@@ -35,7 +35,7 @@ metaDataFormat= "yaml"
   img = "man.png"
   img_title = ""
   icon = "man.png"
-  quote = "Contribute to your choice of 100s of open source software projects in the next 5 minutes!"
+  quote = "Contribute to your choice of 1s (more coming soon 😅) of open source software projects in the next 5 minutes!"
   description= "Getting started contributing to open source software has enough difficulty without worrying about setting up your development environment. This site exists to point developers to a list of open source projects that use a highly reproducible method for building that comes with development environments for free. This allows you to just focus on solving problems and coding, not drudging about with yet another instance of \"works on my machine\"!"
   licenseUrl = ""
 

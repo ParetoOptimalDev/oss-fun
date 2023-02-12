@@ -4,7 +4,7 @@ date: 2023-02-11T21:30:35-06:00
 ---
 # One-time Environment setup
 
-NOTE: Already have both Nix and direnv? Head to the [Reproducible project list](/reproducible-project-list) to find a project to contribute to!
+Already have both Nix and direnv? Head to the [Reproducible project list](/reproducible-project-list) to find a project to contribute to!
 
 The only way to keep open source software development fun is to have a rock-solid way to drop in and out of projects as quickly and seamlessly as possible.
 
@@ -22,5 +22,17 @@ This allows you to skip running `nix develop` before developing a new repository
 
 ### TODO shell
 
+1. https://direnv.net/docs/installation.html
+2. https://direnv.net/docs/hook.html
+
 ### TODO vscode
 
+https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-direnv
+
+### TODO emacs
+
+https://github.com/purcell/envrc
+
+### TODO vim
+
+(unvetted) https://github.com/direnv/direnv.vim
